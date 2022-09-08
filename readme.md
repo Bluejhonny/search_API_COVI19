@@ -1,11 +1,11 @@
-#COVI-19 CASES per country
+# COVI-19 CASES per country
 
-###This search engine shows the statistics of coronavirus cases and deaths around the world by country. 
+### This search engine shows the statistics of coronavirus cases and deaths around the world by country. 
 
-API Source https://rapidapi.com/api-sports/api/covid-193/details
-CSS Framework from https://picocss.com/
+API Source [RapidApi](https://rapidapi.com/api-sports/api/covid-193/details)
+CSS Framework from [PicoCSS](https://picocss.com/)
 
 
-<img src="/coviapisearch.JPG" />
-<img src="/coviapisearcher.JPG" />
-<img src="/coviapisearcher3.JPG" />
+<img src="/images/coviapisearch.JPG" />
+<img src="/images/coviapisearcher.JPG" />
+<img src="/images/coviapisearcher3.JPG" />
