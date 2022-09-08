@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"> -->
+    <link rel="stylesheet" href="css/pico.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVI-19 INFO per country</title>
+</head>
+
+<body>
+    <main class="container">
+        <form id="form">
+            <label>
+                COVI-19 CASES per country
+                <input required id="input" type="text" placeholder="Country">
+                <small> Example: china </small>
+            </label>
+            <button type="submit" id='submit'>
+                Search
+            </button>
+
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                <span class="slider round">Vertical</span>
+                <p id="text" style="display:none"></p>
+            </label>
+        </form>
+
+        <div>
+            <pre id="results"> <!-- //para texto preformateado -->
+            </pre>
+        </div>
+    </main>
+    <!-- table to display the json data -->
+    <table role="grid" id="display_json_data" class="table table-bordered table-striped" style="display:block"></table>
+    <table role="grid" id="display_json_data_vertical" class="table table-bordered table-striped" style="display:none"></table>
+    <script type="module" src="./script.js" crossorigin=""></script>
+
+
+    <script>
+        function myFunction() {
+            // Get the checkbox
+            var checkBox = document.getElementById("myCheck");
+            // Get the output text
+            var text = document.getElementById("text");
+            var textV = document.getElementById("display_json_data_vertical");
+            var textH = document.getElementById("display_json_data");
+
+            // If the checkbox is checked, display the output text
+            if (checkBox.checked == true) {
+                text.style.display = "block";
+                textV.style.display = "block";
+                textH.style.display = "none";
+
+            } else {
+                text.style.display = "none";
+                textV.style.display = "none";
+                textH.style.display = "block";
+            }
+        }
+    </script>
+    </div>
+</body>
+</html>
